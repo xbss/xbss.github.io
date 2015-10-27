@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+body{
+	width: 100%;
+	margin: 0 auto;
+}
+div
+{
+width:8px;
+height:8px;
+float: ;
+position:absolute;
+bottom: 5px;
+border-radius: 8px;
+animation:loading 5s infinite;
+-webkit-animation:loading 5s infinite;
+}
+
+#div1 {
+animation-timing-function:ease;
+animation-delay:0s;
+-webkit-animation-timing-function:ease;
+-webkit-animation-delay:0s;
+background:#18bc9a;}
+#div2 {
+	animation-delay:0.22s;
+animation-timing-function:ease;
+
+-webkit-animation-timing-function:ease;
+-webkit-animation-delay:0.22s;
+background:#58d68d}
+#div3 {
+animation-timing-function:ease;
+animation-delay:0.44s;
+-webkit-animation-timing-function:ease;
+-webkit-animation-delay:0.44s;
+background:#3398dc;}
+#div4 {
+animation-timing-function:ease;
+animation-delay:0.66s;
+-webkit-animation-timing-function:ease;
+-webkit-animation-delay:0.66s;
+background:#9b58b7;}
+
+
+@keyframes loading
+{
+from {left:2%;}
+to {left:98%;}
+}
+
+@-webkit-keyframes loading /* Safari and Chrome */
+{
+from {left:2%;}
+to {left:98%;}
+}
+</style>
+</head>
+<body>
+
+
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div>
+	<div id="div4"></div>
+</body>
+</html>

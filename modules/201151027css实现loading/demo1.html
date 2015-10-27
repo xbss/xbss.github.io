@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#preloader{
+position:absolute;width:100px;height:8px;top:50%;left:50%;margin-top:-4px;margin-left:-50px;
+}
+#preloader div
+{
+background-color:#000000;position:absolute;top:0;left:0;width:8px;height:8px;
+border-radius:50%;
+animation-name:myfirst;
+animation-duration:2.2s;
+animation-iteration-count:infinite;
+-moz-animation:myfirst; /* Firefox */
+-moz-animation-iteration-count:infinite;
+-moz-animation-duration:2.2s;
+-webkit-animation:myfirst; /* Safari and Chrome */
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-duration:2.2s;
+-o-animation:myfirst;
+-o-animation-iteration-count:infinite;
+-o-animation-duration:2.2s;
+}
+#preloader_1{-webkit-animation-delay:0s;
+animation-delay:0s;}
+
+#preloader_2{
+-webkit-animation-delay:0.22s;
+animation-delay:0.22s;
+-moz-animation-delay:0.22s;
+-o-animation-delay:0.22s;}
+
+#preloader-3{-webkit-animation-delay:0.44s;
+animation-delay:0.44s;}
+
+#preloader-4{-webkit-animation-delay:0.66s;
+animation-delay:0.66s;}
+
+@keyframes myfirst
+{
+0%{left:0px;background-color:#000000;}
+50%{left:93px;background-color:#cf32cf;}
+100%{left:0px;background-color:#000000;}
+}
+@-moz-keyframes myfirst{
+0%{left:0px;background-color:#000000;}
+50%{left:93px;background-color:#cf32cf;}
+100%{left:0px;background-color:#000000;}
+}
+@-webkit-keyframes myfirst{
+0%{left:0px;background-color:#000000;}
+50%{left:93px;background-color:#cf32cf;}
+100%{left:0px;background-color:#000000;}
+}
+@-o-keyframes myfirst{
+0%{left:0px;background-color:#000000;}
+50%{left:93px;background-color:#cf32cf;}
+100%{left:0px;background-color:#000000;}
+}
+
+</style>
+<style>
+/* nex loading */
+#nex-preloader{position:absolute;width:100px;height:8px;top:50%;left:50%;margin-top:-4px;margin-left:-50px}
+#nex-preloader div{background-color:#000000;position:absolute;top:0;left:0;width:8px;height:8px;border-radius:50%;
+-webkit-animation-name:nex_preloader;
+-webkit-animation-duration:2.2s;
+-webkit-animation-iteration-count:infinite;
+animation-name:nex_preloader;
+animation-duration:2.2s;
+animation-iteration-count:infinite;
+}
+
+#nex-preloader-1{-webkit-animation-delay:0s;animation-delay:0s;}
+#nex-preloader-2{-webkit-animation-delay:0.22s;animation-delay:0.22s;}
+#nex-preloader-3{-webkit-animation-delay:0.44s;animation-delay:0.44s;}
+#nex-preloader-4{-webkit-animation-delay:0.66s;animation-delay:0.66s;}
+
+@-webkit-keyframes nex_preloader{
+0%{left:0px;background-color:#000000;}
+50%{left:93px;background-color:#cf32cf;}
+100%{left:0px;background-color:#000000;}
+}
+
+@keyframes nex_preloader{
+0%{	left:0px;background-color:#000000;}
+50%{left:93px;background-color:#cf32cf;}
+100%{left:0px;background-color:#000000;}
+}
+</style>
+</head>
+<body>
+
+<div id="nex-preloader">
+   <div id="nex-preloader-1"></div>
+   <div id="nex-preloader-2"></div>
+   <div id="nex-preloader-3"></div>
+   <div id="nex-preloader-4"></div>
+</div>
+
+<p><b>注释：</b>本例在 Internet Explorer 中无效。</p>
+
+</body>
+</html>
