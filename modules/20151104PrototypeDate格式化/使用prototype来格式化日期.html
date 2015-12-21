@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="">
+	</head>
+	<body>
+		
+            {
+		<script type="text/javascript">
+
+		Date.prototype.format = function(partten)
+        {
+            if(partten ==null||partten=='')
+                partten = 'y-m-d';
+            }
+		
+            var y = this.getFullYear();
+            var m = this.getMonth()+1;
+            var d = this.getDate();
+            var r = partten.replace(/y+/gi,y);
+            r = r.replace(/m+/gi,(m<10?"0":"")+m);
+            r = r.replace(/d+/gi,(d<10?"0":"")+d);
+            return r; 
+        }
+		//调用方式
+        console.info((new Date()).format());
+        console.info((new Date()).format("y-m-d"));
+        console.info((new Date()).format("y/m/d"));
+        console.info((new Date()).format("m/d/y"));
+		</script>
+	</body>
+</html>

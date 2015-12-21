@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{
+				height: 900px;
+			}
+			#buttons {
+				height: auto;
+				width: 120px;
+				display: block;
+				position: fixed;
+				left: 50%;
+				margin-left: -47.45%;
+				bottom: 20px;
+				line-height: 10%;
+				text-align: right;
+				opacity: 0.4;
+			}
+			#buttons:hover{
+				opacity: 0.9;
+			}
+			#buttons > input[type=button] {
+				width: 80px;
+				height: 45px;
+				border: solid 3px #DADADA;
+				font-size: 15px;
+				font-weight: bold;
+				color: #6A7083;
+			}
+			
+			#buttons > input[type=button]:hover {
+				color: #F0F0F0;
+				background: #18BC9A;
+				transition: 0.8s;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div id="buttons">
+			<input type="button" value="当月实际" />
+			<input type="button" value="比预算" />
+			<input type="button" value="比上月" />
+		</div>
+	</body>
+
+</html>
