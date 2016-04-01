@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="refresh" content="3">
+	<title>Document</title>
+	
+<style>
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	text-decoration: none;
+}
+#box-move{
+	height:200px;
+	width:60%;
+	background:#ddd;
+	border:solid 1px #aaa;
+	padding:5px;
+	margin:50px auto;
+}
+#box-move a{
+	position:relative;
+	float:left;
+	margin:5px;
+	color:#f40;
+	border:solid 1px #aad;
+	padding:10px;
+	height:80px;
+	width:50px;
+}
+#box-move a i{
+	position: relative;
+}
+#box-move a p{
+	top:60px;
+}
+img {
+	height:50px;
+	width:40px;
+}
+</style>
+</head>
+<body>
+<div id="box-move">
+	<a href="#"><i><img src="2.jpeg" alt="" /></i><p>彩票</p></a>
+	<a href="#"><i><img src="2.jpeg" alt="" /></i><p>彩票</p></a>
+	<a href="#"><i><img src="2.jpeg" alt="" /></i><p>彩票</p></a>
+	<a href="#"><i><img src="2.jpeg" alt="" /></i><p>彩票</p></a>
+</div>
+
+<script src="../../../frame/jquery/jquery-2.1.1.min.js"></script>
+<script>
+$(function(){
+	$("#box-move a").mouseenter(function(){
+		$(this).find("i").animate({top:"-20px",opacity:"0"},300,function(){
+			$(this).css({top:"20px"});
+			$(this).animate({top:"0px",opacity:"1"},200);
+		});
+	});
+});
+</script>
+	
+</body>
+</html>
