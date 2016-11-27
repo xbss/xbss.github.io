@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+<style>
+body{
+	background: #ccc;
+}
+#box{
+	
+}
+* {
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+}
+a{
+	display: block;
+	width: 100px;
+	line-height: 20px;
+	padding: 6px 8px;
+
+
+}
+li{
+	display: inline-block;
+	width: 100px;
+	position: relative;
+	list-style: none;
+}
+.m-nav a {
+	-webkit-transform-origin:50% 50% -14px;
+	transform-origin:50% 50% -14px;
+}
+.m-nav .cntt a {
+	background:#111;
+	color:#fff;
+	-webkit-transform:rotateX(90deg);
+	transform:rotateX(90deg);
+}
+.m-nav .cntb a {
+	position:absolute;
+	left:0;
+	top:0;
+	background:#fff;
+	color:#111;
+}
+.m-nav li:hover .cntt a {
+	-webkit-transform:rotateX(0deg);
+	transform:rotateX(0deg)
+}
+.m-nav li:hover .cntb a {
+	-webkit-transform:rotateX(-90deg);
+	transform:rotateX(-90deg)
+}
+</style>
+
+</head>
+<body>
+	<div id="box">
+		<ul class="m-nav">
+			<li>
+				<div class="cntt"><a href="#">翻转1</a></div>
+				<div class="cntb"><a href="#">翻转2</a></div>
+			</li>
+			<li>
+				<div class="cntt"><a href="#">翻转1</a></div>
+				<div class="cntb"><a href="#">翻转2</a></div>
+			</li>
+			<li>
+				<div class="cntt"><a href="#">翻转1</a></div>
+				<div class="cntb"><a href="#">翻转2</a></div>
+			</li>
+			<li>
+				<div class="cntt"><a href="#">翻转1</a></div>
+				<div class="cntb"><a href="#">翻转2</a></div>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
