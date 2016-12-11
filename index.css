@@ -24,11 +24,12 @@
 a {
 	text-decoration: none;
 }
-
-body {
-	background: #ccc;
+li{
+	list-style: none;
 }
-
+body {
+	/* background: #ccc; */
+}
 
 /* top */
 #top-nav {
@@ -50,7 +51,7 @@ body {
 	/* background: #fff; */
 }
 #nav-title span{
-	font-size:10px;
+	font-size:13px;
 	color: #fff;
 }
 /*top- 翻转导航 */
@@ -100,6 +101,10 @@ body {
 	-webkit-transform: rotateX(-90deg);
 	transform: rotateX(-90deg)
 }
+/*首页链接- 加粗 */
+.m-nav li:first-child{
+	font-weight: bolder;
+}
 /* top-search 搜索框 */
 #top-search{
 	height: 32px;
@@ -124,6 +129,31 @@ body {
 #top-search input{
 	 
 }
+/* 导航菜单-小屏 */
+.m-nav-mini{
+	display:none;
+	position: fixed;
+	width: 100%;
+	height:32px;
+	line-height:32px;
+	text-align:center;
+	bottom: 0px;
+	background: #fff;
+}
+.m-nav-mini div{
+	width: 100%;
+	height: 1px;
+	background: #ccc;
+}
+.m-nav-mini li{
+	float: left;
+	width: 24.5%;
+}
+.m-nav-mini li:last-child img{
+	width: 25px;
+	border-radius:50%;
+}
+
 /* main */
 #main{
     
@@ -232,4 +262,17 @@ body {
     text-align: center;
     font-size: 10px;
     text-align: center;
+}
+
+/* 兼容小屏幕 */
+@media (max-width: 768px) { 
+#top-nav {
+    background: #4984e8;
+}
+#avater-menu {
+    display: none;
+}
+#footer{display: none;}
+.m-nav{display: none;}
+.m-nav-mini{display: block;}
 }
