@@ -6,18 +6,24 @@ $(document).ready(function(){
 		$("#top-search input").css({
 			'background': '#eee'
 		});
-		$("#top-search").animate({
-			'margin-left':'-60px'
-		},0);
+		$("#top-search").css({
+			'margin-left':'-60px',
+			'background': '#eee'
+		});
 	});
 	$("#top-search input").focusout(function(){ // 更改css
 		$("#top-search input").css({
 			'background': '#fff'
 		});
 		$("#top-search input").val("");
-		$("#top-search").animate({
-			'margin-left':'0px'
-		},0);
+		$("#top-search").css({
+			'margin-left':'0px',
+			'background': '#fff'
+		});
+		/*$("#top-search").animate({
+			'margin-left':'0px',
+			'background': '#eee'
+		},100);*/
 	})
 	
 	// 头像菜单事件
@@ -36,8 +42,4 @@ $(document).ready(function(){
 		if(document_top >= 40)  $("#avater-container").fadeIn(0.1);
 		else $("#avater-container").fadeOut(0.1);
 	});
-	
-	
-	
-	
 });
