@@ -78,8 +78,6 @@
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -203,8 +201,10 @@
 </head>
 
     
+        <body class="home-body">
     
-<header class="header">
+    
+<header class="header index-header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -220,21 +220,34 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
+            xiaobin's studio
+            <!-- 文章页  -->
+            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
+            
+            
+                啦啦啦啦啦啦啦~ 我是卖报的小行家~
+            
+            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -346,271 +359,16 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href="/2019/01/10/2014-01-01模板/">
+        <a class="abstract-title" href="/2017/03/02/2017-03-02断章 卞之琳/">
             
-                <span>小镔</span>
+                <span>断章 卞之琳</span>
         </a>
         <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/01/10</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/11/03/2017-11-03win10右键菜单新建卡死死机/">
-            
-                <span>win10右键菜单新建卡死死机</span>
-        </a>
-        <div class="abstract-content">
-            （PS：解决方式请直接跳到后文）
-前言：这个问题是我不久前遇到的，因为当时没有多少钱，就没有使用固态硬盘，当时的win10就装在了机械硬盘上。后来因笔记本上的固态拆下来，就打算迁移系统过去。迁移的方式，我尝试了使用软件来转移不过很多次都没有成功，后来我就使用PE系统进入，接着是使用将整个C盘做成镜像，然后再使用PE系统中的工具将镜像文件GHO恢复到固态硬盘上，然后将原有的机械硬盘上的系统删除。不过后来使用过程中出现了标题所示的问题，我开始也没太在意，不过在后来觉得没有新建菜单功能实在有些麻烦，需要一个txt文件要去别去复制来使用。之后我鼓捣了很久才找到了关键问题所在：我的photosho...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/11/03</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/07/27/2017-07-27虹之玉/">
-            
-                <span>虹之玉</span>
-        </a>
-        <div class="abstract-content">
-            PS：以下内容大部分来源于网络
-图鉴
-
-属性
-景天科 景天属
-生长
-
-不需要太多水分，多光照，会变色
-繁殖
-
-扦插法，茎插、叶插
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/07/27</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/07/27/2017-07-27静态初始化块，初始化块，构造函数，静态方法/">
-            
-                <span>静态初始化块，初始化块，构造函数，静态方法.md</span>
-        </a>
-        <div class="abstract-content">
-            废话在前
-
-在java的初始化过程中有静态块（静态初始化块）、非静态块（初始化块）、构造函数、静态方法。有些时候如果不是很清楚就会对实例化过程产生疑惑，特别是加上子类后。
-1. 首先定义好继承类的基本信息。
-
-C继承B，B继承A。
-ClassA
-
-public class ClassA {
-    static{
-        System.out.println("A 静态初始化块");
-    }
-
-    {
-        System.out.println("A 非静态初始化块");
-    }
-
-    public ClassA() {
-        super();...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/07/27</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/07/25/2017-07-25默认网关不可用无线网隔一段时间受限/">
-            
-                <span>默认网关不可用无线网隔一段时间受限</span>
-        </a>
-        <div class="abstract-content">
-            废话在前
-
-如题，经过我在网上搜索的结果来看，特别是在笔记本上面经常出现。我的台式wifi也是使用的一个笔记本类型的wifi芯片，不过是加上了一张转接卡来配合插在pci-e上。当然我的台式机也出现了题目中的问题。以前我也在网上找寻了很多的方法，有的是直接用windows自带的疑难解答（如方案一），有的说是使用自动获取地址或者是使用固定ip和dns解析（如方案二），还有的是重装系统，而我经过一番研究还是找到了一个解决方法，在我的联想的笔记本和台式机上面都能够正常使用，当然不一定是适合所有的情况，但是可以作为参考使用。（文中部分内容来源于网络）
-方案一：使用疑难解答
-1.打开网络中心
-
-桌面...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/07/25</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/07/25/2017-07-25安装驱动.sys和.inf文件/">
-            
-                <span>安装驱动.sys和.inf文件</span>
-        </a>
-        <div class="abstract-content">
-            1.驱动目录2.解压缩3.解压完成后4.打开网卡驱动设置（在设备管理器中）5.更新驱动6.之后直接进行确定安装就行了
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/07/25</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/07/07/2017-07-07这几天生活不规律，又有了大脑调用不起来的时候了，注意力下降，思考问题都不行了，烦/">
-            
-                <span>这几天生活不规律，又有了大脑调用不起来的时候了，注意力下降，思考问题都不行了，烦</span>
-        </a>
-        <div class="abstract-content">
-            
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/07/07</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/06/11/2017-06-11css+js框浮动位移效果/">
-            
-                <span>css+js框浮动位移效果</span>
-        </a>
-        <div class="abstract-content">
-            [TOC]
-#css+js框浮动位移效果
-##1.要实现的效果
-###咯，这个样儿就是要搞整起来的目标（看下面~看下面，好像有点像是电影的宣传一样 ！=_=！ ）图 1-1
-##2.先来一个小框框
-###哈哈，就是使用一个div包裹图 2-1
-##3.然后加上其他元素
-###头图html
-&lt;img class="img-tezhan" src="./tz.jpg" alt="The Dark Knight Rises" onclick=""&gt;
-
-
-css
-.tezhan img{
-    width: 100%;
-    border-top-left-radius: 4px...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/06/11</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/06/03/2017-06-03简历-邵小镔-13452155441-java后台/">
-            
-                <span>简历-邵小镔-13452155441-java后台</span>
-        </a>
-        <div class="abstract-content">
-            简历附件（pdf）：邵小镔-13452155441-java后台
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2017/06/03</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href="/2017/03/02/2017-03-02好久以前听过的歌，从新回忆依然有那份律动-爱的回音/">
-            
-                <span>好久以前听过的歌，从新回忆依然有那份律动-爱的回音</span>
-        </a>
-        <div class="abstract-content">
-            乐拍乐高，好久以前的音乐类节目了，每个歌手都带着面具，当时还很喜欢船长那低沉的嗓音，非常有磁性。爱的回音-伯爵
+            你站在桥上看风景，
+看风景的人在楼上看你，
+明月装饰了你的窗子，
+你装饰了别人的梦。
+记得当时是高中的时候语文老师（隔壁王老师  == !，当时开学还因我头发长剪过我头发的 ）一直都很提及这首诗，当时真的没有什么感觉，不过慢慢的一直记在了心里，唯唯诺诺，凄凄兮兮。
 
         </div>
         <div class="abstract-post-meta">
@@ -623,14 +381,335 @@ css
         </div>
     </article>
     
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2016/10/04/2016-10-04寝室的窝 捣鼓一下/">
+            
+                <span>寝室的窝 捣鼓一下</span>
+        </a>
+        <div class="abstract-content">
+            这就是我的寝室布局啦，没事就喜欢玩电脑。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2016/10/04</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2016/03/11/2016-03-11我喜欢叫它半月吖/">
+            
+                <span>我喜欢叫它半月吖</span>
+        </a>
+        <div class="abstract-content">
+            
+学名叫做紫玄月，我麻麻喜欢叫它狗牙瓣儿。❤就是喜欢在寝室阳台种东西。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2016/03/11</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/12/21/2015-12-21The superclass javax.servlet.http.HttpServlet was not found on the Java Build Path/">
+            
+                <span>The superclass javax.servlet.http.HttpServlet was not found on the Java Build Path</span>
+        </a>
+        <div class="abstract-content">
+            jsp页面报错情况
+####The superclass “javax.servlet.http.HttpServlet” was not found on the Java Build Path解决这个问题我也是纠结了一阵子，以前都是重新建一个web项目，然后把原来有错的项目文件加入新建的项目中就可以了，但是这样的话就非常麻烦了。后面发现servlet中也有类似的情况，紧接着就去了解了一下，发现是 runtime 环境没有了，也就是tomcat的那些jar包没有加到build path下面，导致了错误。解决方法如下：
+apply应用一下就可以把runtime环境加入咯~
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/12/21</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/12/08/2015-12-08小家伙都累了/">
+            
+                <span>小家伙都累了</span>
+        </a>
+        <div class="abstract-content">
+            
+捕捉实验室的小家伙些。小阳阳，哦哦也是夕牙阳。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/12/08</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/12/04/2015-12-04mysql 连接字符串为空时的处理/">
+            
+                <span>mysql 连接字符串为空时的处理</span>
+        </a>
+        <div class="abstract-content">
+            查出字段为空的判断
+
+
+isnullisnull(xxxx, ‘default’),可以使用isnull函数进行判断，‘default’ 为替换字符，select * from table where isnull(xxx,’’) = ‘’；
+lengthlength(xxxx) 函数判断查询出的字段的长度进行判断；
+is not null在语句中包含 select * from table where xxx is not null；
+caue when使用case when 语句 (cause when xx is null or xx = ‘’ then ‘为空后返回该字符串’ e...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/12/04</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/12/03/2015-12-03jdbc简单实现/">
+            
+                <span>jdbc简单实现</span>
+        </a>
+        <div class="abstract-content">
+            1. mysql jdbc
+
+####sql语言分类：
+数据定义语言（DDL）：create，alert，drop数据操作语言（DML）：insert，update，delete等语句数据查询语言（DQL）：select 等数据控制语言（DCL）：grant，revoke，commit，rollback等。
+
+####sql基本操作：创建表： create table xx（id varchar（255） primarily key，name varchar（255））；删除表：drop table xx；插入数据：insert into xx values(‘01’, ‘jack’);...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/12/03</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/11/23/2015-11-23梦，即是离去。/">
+            
+                <span>梦，即是离去。</span>
+        </a>
+        <div class="abstract-content">
+            
+好像是在工商大学照的，是叫做明净草，治鼻炎，爷爷说的。
+
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/11/23</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/11/20/2015-11-20windows激活/">
+            
+                <span>windows激活</span>
+        </a>
+        <div class="abstract-content">
+            安装windows系统之后的话都需要激活系统提供一些方法：
+  利用序列号方式  
+
+win7：
+[Key]：GMY2P-RBX7P-TQGX8-C8B9B-BGXFF
+[Key]：J78FT-J48BQ-HH2M7-CYVTM-MXRHY
+[Key]：GCHHP-39HXK-X3YWW-HPBWQ-RPGQV
+[Key]：HTXFV-FH8YX-VCY69-JJGBK-7R6XP
+[Key]：6QVYR-WQDGH-RPV2H-FH739-M462C
+[Key]：72VG4-V3KTK-7BQYH-7GXDW-48JJ3
+哦，对了，我记得蓝点网上要更新那个key
+  利用软件oem，非...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/11/20</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href="/2015/11/20/2015-11-20复制文件到U盘时提示不能复制目标文件过大/">
+            
+                <span>复制文件到U盘时提示不能复制目标文件过大</span>
+        </a>
+        <div class="abstract-content">
+            有些时候比如说要复制一个8个G的游戏文件给别人，结果不能复制到U盘，一看U盘的容量是非常足的，这个其实是U盘格式的问题，右键U盘点击属性一般U盘是Fat32的格式，这种格式使用的是32位的分配表。打个比方吧，要是你要吃个石榴，结果石榴的大小比你的嘴大得多那你就塞不进嘴巴，是吧？哦，当然哈，没人这么傻会这样去吃石榴，只是个比方，比方。那这时候有了这个概念要如何去解决问题呢，其实很简单，Fat32格式不支持的话就直接使用可以支持大于4G文件操作的格式咯。NTFS就是了，在我们使用的系统windows中一般都是使用的NTFS格式。但是的话U盘数据要先备份好咯，不然你懂的，种子都没了，转换格式是...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2015/11/20</span>
+            </div>
+            <!-- tags  -->
+            
+        </div>
+    </article>
+    
     <!-- paginator  -->
     
     <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/page/2/">2</a><a class="page-number" href="/archives/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/archives/page/5/">5</a><a class="extend next" rel="next" href="/archives/page/2/">NEXT &#62;</a>
+        <a class="extend prev" rel="prev" href="/">&#60; PREV</a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" href="/page/3/">NEXT &#62;</a>
     </nav>
     
 </main>
             <!-- profile -->
+            
+            <div class="profile">
+    <img class="profile-avatar" alt="avatar" src="/avatar/me.jpg">
+    <div class="profile-name">邵小镔</div>
+    
+    
+    <div class="profile-social">
+        
+    
+        
+            
+                <a href="mailto:1360303452@qq.com" class="iconfont-archer email" title="email"></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/xbss" class="iconfont-archer github" target="_blank" title="github"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="//weibo.com/xiaobin99" class="iconfont-archer weibo" target="_blank" title="weibo"></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    </div>
+    
+    
+        <div class="friends">
+            <div>FRIENDS</div>
+            
+                
+            
+                
+            
+                
+            
+        </div>
+    
+    
+        <div class="about-me">
+            <a href="/about">ABOUT ME</a>
+        </div>
+    
+</div>
             
         </div>
         <footer class="footer footer-unloaded">
