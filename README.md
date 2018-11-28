@@ -1,2 +1,0 @@
-# hhahahhahhh
-blog
